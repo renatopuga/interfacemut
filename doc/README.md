@@ -2,4 +2,4 @@
 Interface de Mutações Genéticas
 
 # Documentação
-- (Introdução NGS)[doc]
+- [Introdução NGS](doc)
