@@ -42,13 +42,18 @@ Construct Library: Kits otimizados para fragmentação e amplificação do DNA.
 NGS Instruments: Sistemas como Ion GeneStudio S5 são projetados para estudos direcionados e sequenciamento de baixo custo.
 
 
-**Observações ao longo dos estudos: **
+**Observações ao longo dos estudos:**
+
 Genética estuda partes específicas do DNA (genes) e como elas influenciam características ou doenças.
- Genoma é o estudo do DNA inteiro, analisando como todos os genes e sequências trabalham juntos para formar um organismo.
+Genoma é o estudo do DNA inteiro, analisando como todos os genes e sequências trabalham juntos para formar um organismo.
+
 O site da Illumina apresenta uma visão geral sobre as tecnologias de sequenciamento genético que a empresa oferece. Ele destaca como o sequenciamento de DNA revolucionou áreas como pesquisa biomédica, diagnósticos e medicina personalizada. A Illumina utiliza tecnologias avançadas para ler o material genético com alta precisão, permitindo identificar mutações, estudar doenças genéticas e explorar a biodiversidade.
+
 O conteúdo explica os dois métodos principais de sequenciamento: sequenciamento de leitura curta (short-read) e sequenciamento de leitura longa (long-read), enfatizando que a abordagem da Illumina é baseada em leituras curtas, que são rápidas, acessíveis e confiáveis. Essa tecnologia é usada para estudos como análise do genoma completo, exoma e RNA, oferecendo dados detalhados para entender a biologia em nível molecular.
+
 Além disso, o site destaca aplicações práticas do sequenciamento, como na pesquisa do câncer, saúde reprodutiva e doenças infecciosas, ajudando cientistas e médicos a encontrar soluções inovadoras para problemas complexos de saúde e biologia.
 O genoma de referência é um modelo padrão usado para comparar sequências de DNA, como o da Universidade da Califórnia (UCSC Genome Browser). Sequenciadores leem fitas de DNA e geram dados que podem ser alinhados com esse genoma de referência. A diferença entre genoma e gene é que o genoma é todo o DNA de um organismo, enquanto um gene é uma parte específica que contém instruções para funções biológicas.
+
 No Linux, comandos como cd (navegar entre diretórios) e ls (listar arquivos) são úteis para organizar e acessar os arquivos de sequenciamento.
 Cromossomos são grandes estruturas de DNA organizadas dentro do núcleo celular, compostos por nucleotídeos, que são as unidades básicas do DNA.
 O Ion Torrent é uma tecnologia prática e acessível para sequenciamento, ideal para análises direcionadas. Após o sequenciamento, os dados são analisados em um pipeline que inclui etapas como pré-processamento, alinhamento e chamada de variantes. A escolha de softwares e ferramentas depende do objetivo do experimento, sendo essencial garantir qualidade e precisão nos resultados.
@@ -67,25 +72,30 @@ RNA-Seq: Estudos de expressão gênica com alta precisão.
 Metagenômica e microbioma: Análise de comunidades microbianas com diversidade genética alta.
 Sequenciamento de exomas: Detecção de variantes em regiões codificantes do genoma.
 
-Tempo de Sequenciamento
-Ion Torrent
+**Tempo de Sequenciamento**
+- Ion Torrent
 Sequenciamento mais rápido, devido à simplicidade do método de detecção (mudanças de pH).
 Menor tempo de preparação e processamento, ideal para resultados urgentes.
-Illumina
+
+- Illumina
 Sequenciamento mais demorado, já que utiliza ciclos de síntese com detecção fluorescente e múltiplas etapas de processamento.
 Maior tempo para estudos complexos, mas oferece maior profundidade de dados.
-Custo e Acessibilidade
-Ion Torrent
+
+**Custo e Acessibilidade**
+- Ion Torrent
 Geralmente mais acessível em termos de custo inicial e manutenção de equipamentos.
 Kits de preparo e reagentes podem ser mais econômicos, mas geram menor volume de dados por corrida.
-Illumina
+
+- Illumina
 Equipamentos têm custo inicial mais alto.
 Kits de preparo de biblioteca são mais caros, mas oferecem maior rendimento e precisão.
-Qualidade dos Dados
-Ion Torrent
+
+**Qualidade dos Dados**
+- Ion Torrent
 Pode apresentar maior taxa de erro, especialmente em sequências ricas em homopolímeros (repetições da mesma base, como AAAAA).
 Dados são adequados para análises direcionadas, mas menos indicados para genomas grandes ou complexos.
-Illumina
+
+- Illumina
 Alta precisão e baixa taxa de erro.
 Melhor escolha para análises que exigem qualidade e profundidade, como genomas completos ou regiões de difícil sequenciamento.
 
