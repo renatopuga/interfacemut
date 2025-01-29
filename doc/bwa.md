@@ -9,9 +9,8 @@ sudo apt install bwa
 Agora, podemos indexar (criar um índice remissivo) de todas as bases do genoma ou de um cromossomo específico. Isso ajuda a o algoritmo BWA ser mais rápido e eficiente para encontrar regiões onde a nossa sequencia de DNA se alinhe com maior `match` (explicar melhor depois). Exemplo: indexar o cromossomo 9 da versão hg38 do genoma humano.
 
 - Download do arquivo chr9.fa.gz (formato FASTA)
-```
-FASTA: é formato de arquivo...
-```
+> FASTA: é formato de arquivo...
+
 
 ```bash
 wget -c https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr9.fa.gz
