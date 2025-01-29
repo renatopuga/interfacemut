@@ -5,3 +5,6 @@ Interface de Mutações Genéticas
 
 ### Documentação
 - [Introdução NGS](doc)
+
+### Meu Primeiro Pipeline
+- Alinhamento com BWA [BWA](doc/bwa.md)
