@@ -9,3 +9,4 @@ Interface de Mutações Genéticas
 ### Meu Primeiro Pipeline
 - Google Colab - Pipeline Executável [Google Colab](https://colab.research.google.com/drive/10gCDDhcCo-2SkE8Kp-u8xqDgBlDZS3zL?usp=sharing)
 - Alinhamento com BWA [BWA](doc/bwa.md)
+- Looker Studio - [Filtros](doc/looker-studio-filters.md)
