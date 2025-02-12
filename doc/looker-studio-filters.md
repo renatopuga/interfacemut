@@ -1,5 +1,7 @@
 # Filtros de Variantes
 
+**Opções:**
+
 ```
 Filtrar o VCF com filter_vep:
 -filter "(MAX_AF <= 0.01 or not MAX_AF) and
