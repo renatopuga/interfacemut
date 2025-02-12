@@ -158,6 +158,71 @@ Baixa o arquivo chr9.fa.gz, que contém a sequência do cromossomo 9 da referên
 !cat filtered.vep.tsv
 •	Exibe o conteúdo do arquivo com as variantes anotadas.
 
+14. Instala o uDocker e realiza sua configuração inicial.
+pip install udocker: Instala o uDocker usando o gerenciador de pacotes do Python.
+udocker --allow-root install: Inicializa o uDocker, permitindo execução como root e baixando seus componentes necessários.
+
+15.Baixa a imagem do Ensembl VEP para execução em contêiner.
+udocker --allow-root pull: Baixa uma imagem do Docker Hub, permitindo execução como root.
+ensemblorg/ensembl-vep: Nome da imagem oficial do Ensembl VEP, usada para anotação funcional de variantes genéticas.
+
+16. Exibe o diretório atual onde o comando está sendo executado.
+pwd (print working directory) mostra o caminho absoluto do diretório no sistema de arquivos.
+O ! indica que o comando está sendo executado no shell do sistema dentro de um ambiente como Jupyter Notebook.
+Exemplo de saída:
+/home/usuario/projeto
+
+17. Execução do Ensembl VEP dentro de um contêiner uDocker
+udocker --allow-root run → Executa um contêiner uDocker com permissões de root.
+--rm → Remove o contêiner após a execução (descarta qualquer alteração feita dentro dele).
+**-v \pwd`:`pwd`** → Monta o diretório atual (pwd`) dentro do contêiner, permitindo acesso aos arquivos do host.
+-w \pwd`` → Define o diretório de trabalho dentro do contêiner como o diretório atual do host.
+ensemblorg/ensembl-vep → Usa a imagem oficial do Ensembl VEP.
+vep → Comando executado dentro do contêiner (inicia o Variant Effect Predictor).
+O comando executa o Ensembl VEP dentro de um contêiner uDocker, garantindo que o programa tenha acesso aos arquivos do diretório atual. Isso permite rodar o VEP sem instalar diretamente no sistema operacional.
+
+18. Criação e configuração do diretório para saída do VEP
+%%bash → Indica que o bloco de código será executado no shell Bash (usado em notebooks como Jupyter).
+mkdir -p vep_output → Cria o diretório vep_output, se ele ainda não existir.
+chmod 777 vep_output → Concede permissões totais de leitura, escrita e execução para todos os usuários no diretório. Isso garante que o contêiner possa gravar arquivos dentro dele.
+ls -l → Lista os arquivos e diretórios com detalhes (permissões, dono, grupo, tamanho e data de modificação).
+O comando cria um diretório para armazenar a saída do VEP, garantindo que ele tenha as permissões corretas para escrita pelo contêiner uDocker.
+
+19. O código usa a API do Ensembl VEP (Variant Effect Predictor) para obter anotações de variantes genéticas na região 9:22125503-22125502 do genoma humano (GRCh37). Ele processa os dados e os exibe em formato de tabela com pandas.
+requests: Para fazer a requisição HTTP à API do Ensembl.
+pandas: Para manipular os dados e exibi-los como tabela.
+server: URL base do Ensembl para a versão do genoma GRCh37.
+ext: Caminho da API para consultar o efeito de variantes na região 9:22125503-22125502, no cromossomo 9, com alelo C.
+Envia uma requisição GET para a API do Ensembl VEP.
+O cabeçalho "Content-Type": "application/json" informa que a resposta deve ser no formato JSON.
+Verifica se a requisição não foi bem-sucedida (r.ok == False).
+Se houver erro (ex.: URL errada ou servidor fora do ar), ele levanta uma exceção (raise_for_status()), interrompendo a execução.
+r.json() → Converte a resposta da API para um dicionário Python.
+pd.json_normalize(decoded) → Transforma o JSON em um DataFrame, organizando os dados em formato de tabela.
+df Exibe os dados em formato tabular no Jupyter Notebook ou outro ambiente compatível.
+Resumo do funcionamento faz uma requisição à API Ensembl VEP.
+Obtém informações sobre a variante genética em chr9:22125503-22125502.
+Converte a resposta JSON para um DataFrame pandas.
+Exibe a tabela com os dados estruturados.
+
+20.Comando para visualizar o conteúdo do arquivo filtered.vep.tsv
+cat → Exibe o conteúdo de um arquivo no terminal.
+filtered.vep.tsv → Nome do arquivo gerado pelo Ensembl VEP, contendo as anotações das variantes genéticas.
+O comando verificar rapidamente o conteúdo do arquivo gerado pelo VEP, confirmar se a anotação das variantes foi concluída corretamente e inspecionar a estrutura do arquivo antes de processá-lo em outro programa.
+
+21. Comando para Converter TSV para CSV
+cat tabela-variantes-teste01.tsv:
+Exibe o conteúdo do arquivo tabela-variantes-teste01.tsv no terminal.
+O arquivo tabela-variantes-teste01.tsv é um arquivo TSV (Tab Separated Values), onde os valores são separados por tabulação (\t).
+|:
+O operador pipe (|) pega a saída do comando anterior e a passa como entrada para o próximo comando.
+tr '\t' ',':
+O comando tr (translate) substitui os caracteres de tabulação (\t) por vírgulas (,) no conteúdo do arquivo.
+Isso converte o formato TSV para CSV (Comma Separated Values), que usa vírgulas para separar os valores.
+> tabela-variantes-teste01.csv:
+O operador de redirecionamento (>) escreve a saída do comando anterior no arquivo tabela-variantes-teste01.csv.
+Assim, o conteúdo do arquivo TSV é salvo como um arquivo CSV.
+Esse comando converte um arquivo TSV (com tabulações) em CSV (com vírgulas como delimitador), o que pode ser útil para importar o arquivo para ferramentas como Excel ou pandas.
 
 
 **Observações ao longo dos estudos:**
