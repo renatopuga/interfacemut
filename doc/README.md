@@ -340,3 +340,6 @@ Dados são adequados para análises direcionadas, mas menos indicados para genom
 Alta precisão e baixa taxa de erro.
 Melhor escolha para análises que exigem qualidade e profundidade, como genomas completos ou regiões de difícil sequenciamento.
 
+- Conversão de arquivo CSV para Google Sheets:
+https://colab.research.google.com/drive/1K5UOdAgLeE9s-fnVFDhqkkgjVyrrZlLf?usp=sharing
+
