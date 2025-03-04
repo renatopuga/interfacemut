@@ -258,10 +258,11 @@ O comando cria um diretório para armazenar a saída do VEP, garantindo que ele 
 
 Anotações de variantes genéticas na região 9:22125503-22125502 do genoma humano (GRCh37). Ele processa os dados e os exibe em formato de tabela com pandas.
 
-requests: Para fazer a requisição HTTP à API do Ensembl.
-pandas: Para manipular os dados e exibi-los como tabela.
-server: URL base do Ensembl para a versão do genoma GRCh37.
-ext: Caminho da API para consultar o efeito de variantes na região 9:22125503-22125502, no cromossomo 9, com alelo C.
+- **requests:** Para fazer a requisição HTTP à API do Ensembl.
+- **pandas:** Para manipular os dados e exibi-los como tabela.
+- **server:** URL base do Ensembl para a versão do genoma GRCh37.
+- **ext:** Caminho da API para consultar o efeito de variantes na região 9:22125503-22125502, no cromossomo 9, com alelo C.
+
 Envia uma requisição GET para a API do Ensembl VEP.
 O cabeçalho "Content-Type": "application/json" informa que a resposta deve ser no formato JSON.
 Verifica se a requisição não foi bem-sucedida (r.ok == False).
@@ -276,24 +277,25 @@ Exibe a tabela com os dados estruturados.
 
 **20.Comando para visualizar o conteúdo do arquivo filtered.vep.tsv**
 
-cat → Exibe o conteúdo de um arquivo no terminal.
-filtered.vep.tsv → Nome do arquivo gerado pelo Ensembl VEP, contendo as anotações das variantes genéticas.
+- **cat:** Exibe o conteúdo de um arquivo no terminal.
+- **filtered.vep.tsv:** Nome do arquivo gerado pelo Ensembl VEP, contendo as anotações das variantes genéticas.
 O comando verificar rapidamente o conteúdo do arquivo gerado pelo VEP, confirmar se a anotação das variantes foi concluída corretamente e inspecionar a estrutura do arquivo antes de processá-lo em outro programa.
 
 **21. Comando para Converter TSV para CSV**
 
-cat tabela-variantes-teste01.tsv:
-Exibe o conteúdo do arquivo tabela-variantes-teste01.tsv no terminal.
-O arquivo tabela-variantes-teste01.tsv é um arquivo TSV (Tab Separated Values), onde os valores são separados por tabulação (\t).
-|:
-O operador pipe (|) pega a saída do comando anterior e a passa como entrada para o próximo comando.
-tr '\t' ',':
-O comando tr (translate) substitui os caracteres de tabulação (\t) por vírgulas (,) no conteúdo do arquivo.
+```bash
+!cat tabela-variantes-teste01.tsv
+```
+
+Exibe o conteúdo do arquivo `tabela-variantes-teste01.tsv` no terminal.
+O arquivo `tabela-variantes-teste01.tsv` é um arquivo TSV (Tab Separated Values), onde os valores são separados por tabulação (\t).
+
+- |: O operador pipe (|) pega a saída do comando anterior e a passa como entrada para o próximo comando.
+- tr '\t' ',': O comando tr (translate) substitui os caracteres de tabulação (\t) por vírgulas (,) no conteúdo do arquivo.
 Isso converte o formato TSV para CSV (Comma Separated Values), que usa vírgulas para separar os valores.
-> tabela-variantes-teste01.csv:
-O operador de redirecionamento (>) escreve a saída do comando anterior no arquivo tabela-variantes-teste01.csv.
-Assim, o conteúdo do arquivo TSV é salvo como um arquivo CSV.
-Esse comando converte um arquivo TSV (com tabulações) em CSV (com vírgulas como delimitador), o que pode ser útil para importar o arquivo para ferramentas como Excel ou pandas.
+- > tabela-variantes-teste01.csv: O operador de redirecionamento (>) escreve a saída do comando anterior no arquivo tabela-variantes-teste01.csv.
+
+Assim, o conteúdo do arquivo TSV é salvo como um arquivo CSV. Esse comando converte um arquivo TSV (com tabulações) em CSV (com vírgulas como delimitador), o que pode ser útil para importar o arquivo para ferramentas como Excel ou pandas.
 
 
 **Observações ao longo dos estudos:**
@@ -312,62 +314,119 @@ No Linux, comandos como cd (navegar entre diretórios) e ls (listar arquivos) s�
 Cromossomos são grandes estruturas de DNA organizadas dentro do núcleo celular, compostos por nucleotídeos, que são as unidades básicas do DNA.
 O Ion Torrent é uma tecnologia prática e acessível para sequenciamento, ideal para análises direcionadas. Após o sequenciamento, os dados são analisados em um pipeline que inclui etapas como pré-processamento, alinhamento e chamada de variantes. A escolha de softwares e ferramentas depende do objetivo do experimento, sendo essencial garantir qualidade e precisão nos resultados.
 
-Colunas presentes na tabela
-1.	CHROM – Cromossomo
-2.	POS – Posição genômica
-3.	REF – Base de referência
-4.	ALT – Base(s) alternativa(s)
-5.	Consequence – Consequência da variante
-6.	IMPACT – Impacto da variante
-7.	SYMBOL – Símbolo do gene afetado
-8.	Gene – Identificação do gene
-9.	Feature_type – Tipo de característica genética
-10.	Feature – Identificação da característica
-11.	BIOTYPE – Tipo biológico
-12.	EXON – Exon envolvido
-13.	INTRON – Intron envolvido
-14.	HGVSc – Nomenclatura HGVS para DNA
-15.	HGVSp – Nomenclatura HGVS para proteína
-16.	cDNA_position – Posição no cDNA
-17.	CDS_position – Posição no CDS
-18.	Protein_position – Posição da proteína
-19.	Amino_acids – Alteração nos aminoácidos
-20.	Codons – Alteração nos códons
-21.	Existing_variation – Variação existente
-22.	IND – Identificador da variante
-23.	ZYG – Estado de zigosidade
-24.	DISTANCE – Distância para gene mais próximo
-25.	STRAND – Fita de DNA afetada
-26.	FLAGS – Flags associadas
-27.	VARIANT_CLASS – Classe da variante
-28.	SYMBOL_SOURCE – Fonte do símbolo do gene
-29.	HGNC_ID – Identificação do gene no HGNC
-30.	CANONICAL – Indica se é uma transcrição canônica
-31.	MANE_SELECT – Indica se faz parte do MANE Select
-32.	MANE_PLUS_CLINICAL – Indica se faz parte do MANE Plus Clinical
-33.	ENSP – Identificação da proteína ENSP
-34.	SIFT – Previsão de impacto funcional SIFT
-35.	PolyPhen – Previsão de impacto funcional PolyPhen
-36.	HGVS_OFFSET – Offset na nomenclatura HGVS
-37.	AF – Frequência alélica
-38.	gnomADe_AF – Frequência alélica no gnomAD Exome
-39.	gnomADg_AF – Frequência alélica no gnomAD Genome
-40.	MAX_AF – Máxima frequência alélica
-41.	MAX_AF_POPS – População com maior frequência
-42.	CLIN_SIG – Significância clínica da variante
-43.	SOMATIC – Indica se é uma mutação somática
-44.	PHENO – Indica se tem fenótipo associado
-45.	REVEL – Score REVEL para patogenicidade
-46.	INTERVAR_InterVar – Classificação InterVar
-47.	FILTER – Filtros aplicados
-48.	HOTSPOT – Indica se a variante está em um hotspot
-49.	GERM_STATUS – Status germinativo
-50.	SAMPLE – Amostra analisada
-51.	GT – Genótipo
-52.	DP – Profundidade de leitura
-53.	ADR – Leitura de alelo de referência
-54.	ADV – Leitura de alelo variante
-55.	AFV – Frequência do alelo variante
++--------------+--------------------+-------------------------------------------+--+--+--+
+| NumeroColuna | Nome               | Descrição                                 |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 1            | CHROM              | Cromossomo                                |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 2            | POS                | Posição genômica                          |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 3            | REF                | Base de referência                        |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 4            | ALT                | Base(s) alternativa(s)                    |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 5            | Consequence        | Consequência da variante                  |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 6            | IMPACT             | Impacto da variante                       |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 7            | SYMBOL             | Símbolo do gene afetado                   |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 8            | Gene               | Identificação do gene                     |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 9            | Feature_type       | Tipo de característica genética           |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 10           | Feature            | Identificação da característica           |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 11           | BIOTYPE            | Tipo biológico                            |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 12           | EXON               | Exon envolvido                            |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 13           | INTRON             | Intron envolvido                          |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 14           | HGVSc              | Nomenclatura HGVS para DNA                |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 15           | HGVSp              | Nomenclatura HGVS para proteína           |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 16           | cDNA_position      | Posição no cDNA                           |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 17           | CDS_position       | Posição no CDS                            |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 18           | Protein_position   | Posição da proteína                       |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 19           | Amino_acids        | Alteração nos aminoácidos                 |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 20           | Codons             | Alteração nos códons                      |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 21           | Existing_variation | Variação existente                        |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 22           | IND                | Identificador da variante                 |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 23           | ZYG                | Estado de zigosidade                      |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 24           | DISTANCE           | Distância para gene mais próximo          |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 25           | STRAND             | Fita de DNA afetada                       |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 26           | FLAGS              | Flags associadas                          |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 27           | VARIANT_CLASS      | Classe da variante                        |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 28           | SYMBOL_SOURCE      | Fonte do símbolo do gene                  |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 29           | HGNC_ID            | Identificação do gene no HGNC             |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 30           | CANONICAL          | Indica se é uma transcrição canônica      |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 31           | MANE_SELECT        | Indica se faz parte do MANE Select        |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 32           | MANE_PLUS_CLINICAL | Indica se faz parte do MANE Plus Clinical |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 33           | ENSP               | Identificação da proteína ENSP            |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 34           | SIFT               | Previsão de impacto funcional SIFT        |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 35           | PolyPhen           | Previsão de impacto funcional PolyPhen    |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 36           | HGVS_OFFSET        | Offset na nomenclatura HGVS               |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 37           | AF                 | Frequência alélica                        |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 38           | gnomADe_AF         | Frequência alélica no gnomAD Exome        |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 39           | gnomADg_AF         | Frequência alélica no gnomAD Genome       |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 40           | MAX_AF             | Máxima frequência alélica                 |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 41           | MAX_AF_POPS        | População com maior frequência            |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 42           | CLIN_SIG           | Significância clínica da variante         |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 43           | SOMATIC            | Indica se é uma mutação somática          |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 44           | PHENO              | Indica se tem fenótipo associado          |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 45           | REVEL              | Score REVEL para patogenicidade           |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 46           | INTERVAR_InterVar  | Classificação InterVar                    |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 47           | FILTER             | Filtros aplicados                         |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 48           | HOTSPOT            | Indica se a variante está em um hotspot   |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 49           | GERM_STATUS        | Status germinativo                        |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 50           | SAMPLE             | Amostra analisada                         |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 51           | GT                 | Genótipo                                  |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 52           | DP                 | Profundidade de leitura                   |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 53           | ADR                | Leitura de alelo de referência            |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 54           | ADV                | Leitura de alelo variante                 |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
+| 55           | AFV                | Frequência do alelo variante              |  |  |  |
++--------------+--------------------+-------------------------------------------+--+--+--+
 
 
 **Aplicações Preferenciais**
