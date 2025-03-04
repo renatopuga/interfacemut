@@ -148,7 +148,8 @@ Baixa o arquivo chr9.fa.gz, que contém a sequência do cromossomo 9 da referên
 
 **10. Identificação de variantes somáticas (câncer)**
 ```bash
-!./gatk-4.2.2.0/gatk Mutect2 \
+Gitpod.io
+./gatk-4.2.2.0/gatk Mutect2 \
   -R chr9.fa \
   -I somatico/tumor_JAK2.bam \
   -I somatico/normal_JAK2.bam \
@@ -167,7 +168,8 @@ Baixa o arquivo chr9.fa.gz, que contém a sequência do cromossomo 9 da referên
 
 **11. Coleta de estatísticas de variantes**
 ```bash
-!./gatk-4.2.2.0/gatk GetPileupSummaries \
+%%bash
+./gatk-4.2.2.0/gatk GetPileupSummaries \
   -I somatico/tumor_JAK2.bam \
   -V somatico/af-only-gnomad-chr9.vcf.gz \
   -L chr9.interval_list \
@@ -176,7 +178,8 @@ Baixa o arquivo chr9.fa.gz, que contém a sequência do cromossomo 9 da referên
 •	Coleta estatísticas de cobertura da amostra tumoral.
 
 ```bash
-!./gatk-4.2.2.0/gatk GetPileupSummaries \
+%%bash
+./gatk-4.2.2.0/gatk GetPileupSummaries \
   -I somatico/normal_JAK2.bam \
   -V somatico/af-only-gnomad-chr9.vcf.gz \
   -L chr9.interval_list \
@@ -186,7 +189,8 @@ Baixa o arquivo chr9.fa.gz, que contém a sequência do cromossomo 9 da referên
 
 **12. Anotação funcional das variantes com Ensembl VEP**
 ```bash
-!./ensembl-vep/vep  \
+%%bash
+./ensembl-vep/vep  \
   -i filtered.vcf.gz  \
   -o filtered.vep.tsv \
   --database --assembly GRCh37 --refseq  \
