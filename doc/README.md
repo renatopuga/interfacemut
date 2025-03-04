@@ -14,102 +14,140 @@ Next-Generation Sequencing (NGS) é uma tecnologia revolucionária que permite o
 
 A tecnologia NGS utiliza plataformas automatizadas que sequenciam milhões de fragmentos de DNA simultaneamente. Essa abordagem paralela permite obter grandes quantidades de dados em um curto período. Existem dois métodos principais:
 
-- Single-Read Sequencing: Sequencia apenas uma extremidade de cada fragmento de DNA. É mais rápido e utilizado para estudos como RNA-Seq.
-- Paired-End Sequencing: Sequencia ambas as extremidades de cada fragmento, proporcionando maior precisão para análise de variantes estruturais e montagens de genomas complexos.
+**- Single-Read Sequencing:** Sequencia apenas uma extremidade de cada fragmento de DNA. É mais rápido e utilizado para estudos como RNA-Seq.
+**- Paired-End Sequencing:** Sequencia ambas as extremidades de cada fragmento, proporcionando maior precisão para análise de variantes estruturais e montagens de genomas complexos.
 
 A preparação da biblioteca é uma etapa crítica, envolvendo a fragmentação do DNA, a ligação de adaptadores e a amplificação por PCR. A escolha dos kits de preparo depende do objetivo do experimento e das plataformas utilizadas.
-Aplicações do NGS
-Targeted Resequencing: Permite investigar genes específicos associados a doenças ou traços. Usado em medicina personalizada para identificar mutações genéticas.
-Deep Sequencing: Gera dados de alta profundidade, permitindo a detecção de variantes raras e a análise de populações microbianas complexas.
-Mate Pair Sequencing: Ideal para identificar grandes reordenamentos genômicos e mapear regiões repetitivas.
-Sample Multiplexing: Usa índices para sequenciar várias amostras em uma única corrida, reduzindo custos e aumentando a eficiência.
-Bases Moleculares do Sequenciamento
+
+**Aplicações do NGS**
+
+- Targeted Resequencing: Permite investigar genes específicos associados a doenças ou traços. Usado em medicina personalizada para identificar mutações genéticas.
+- Deep Sequencing: Gera dados de alta profundidade, permitindo a detecção de variantes raras e a análise de populações microbianas complexas.
+- Mate Pair Sequencing: Ideal para identificar grandes reordenamentos genômicos e mapear regiões repetitivas.
+- Sample Multiplexing: Usa índices para sequenciar várias amostras em uma única corrida, reduzindo custos e aumentando a eficiência.
+
+**Bases Moleculares do Sequenciamento**
+
 O sequenciamento baseia-se na detecção de nucleotídeos incorporados durante a síntese de DNA. As principais plataformas (Illumina, Ion Torrent) diferem nos métodos de detecção:
-Illumina: Utiliza a síntese reversível de terminadores fluorescentes, gerando alta precisão e rendimento.
-Ion Torrent: Detecta mudanças no pH geradas pela incorporação de nucleotídeos, sendo uma alternativa mais acessível.
+
+- Illumina: Utiliza a síntese reversível de terminadores fluorescentes, gerando alta precisão e rendimento.
+- Ion Torrent: Detecta mudanças no pH geradas pela incorporação de nucleotídeos, sendo uma alternativa mais acessível.
 A cobertura de sequenciamento é essencial para garantir a qualidade dos dados. Uma maior cobertura aumenta a confiança na detecção de variantes, especialmente em regiões de baixa expressão.
-Design 
-Seleção de Alvos: Escolha de genes ou regiões a serem sequenciados.
-Preparação de Biblioteca
-Multiplexação e Índices: Planejamento para combinar amostras sem perda de integridade.
-Ferramentas e Plataformas NGS
-Illumina:
-Sequencing Platforms: Sistemas como NovaSeq, NextSeq e MiSeq atendem diferentes demandas, desde estudos de expressão gênica até análise de genomas completos.
-Experiment Planning Tools: Ferramentas que auxiliam no planejamento e escolha dos kits de biblioteca mais adequados.
-NGS Library Preparation: Oferece kits de alta eficiência para uma ampla variedade de aplicações.
-Ion Torrent:
-Construct Library: Kits otimizados para fragmentação e amplificação do DNA.
-NGS Instruments: Sistemas como Ion GeneStudio S5 são projetados para estudos direcionados e sequenciamento de baixo custo.
+
+**Design**
+
+- Seleção de Alvos: Escolha de genes ou regiões a serem sequenciados.
+
+**Preparação de Biblioteca**
+
+- Multiplexação e Índices: Planejamento para combinar amostras sem perda de integridade.
+
+**Ferramentas e Plataformas NGS**
+
+- Illumina: Sequencing Platforms: Sistemas como NovaSeq, NextSeq e MiSeq atendem diferentes demandas, desde estudos de expressão gênica até análise de genomas completos.
+- Experiment Planning Tools: Ferramentas que auxiliam no planejamento e escolha dos kits de biblioteca mais adequados.
+- NGS Library Preparation: Oferece kits de alta eficiência para uma ampla variedade de aplicações.
+- Ion Torrent:
+- Construct Library: Kits otimizados para fragmentação e amplificação do DNA.
+- NGS Instruments: Sistemas como Ion GeneStudio S5 são projetados para estudos direcionados e sequenciamento de baixo custo.
 
 **Ferramentas uteis:**
 
-Gitpod.io: Gitpod é uma plataforma de desenvolvimento integrada baseada na nuvem. Ela permite que desenvolvedores escrevam, testem e depurem código diretamente no navegador, sem a necessidade de configurar um ambiente local. Diferente de outras ferramentas, seu foco é a agilidade e a colaboração, permitindo que qualquer desenvolvedor inicie um projeto com um ambiente de desenvolvimento pré-configurado e sem a preocupação com configurações locais.
+- Gitpod (http://gitpod.io) é uma plataforma de desenvolvimento integrada baseada na nuvem. Ela permite que desenvolvedores escrevam, testem e depurem código diretamente no navegador, sem a necessidade de configurar um ambiente local. Diferente de outras ferramentas, seu foco é a agilidade e a colaboração, permitindo que qualquer desenvolvedor inicie um projeto com um ambiente de desenvolvimento pré-configurado e sem a preocupação com configurações locais.
 
-Superset: Superset é uma ferramenta de visualização e exploração de dados. Ao contrário das plataformas genéticas, seu principal foco é fornecer insights sobre grandes volumes de dados de diferentes fontes. Com ele, é possível criar dashboards interativos para explorar dados em tempo real, focando na análise visual e na criação de relatórios complexos, ao invés de fornecer análises sobre dados genéticos.
+- Superset: Superset é uma ferramenta de visualização e exploração de dados. Ao contrário das plataformas genéticas, seu principal foco é fornecer insights sobre grandes volumes de dados de diferentes fontes. Com ele, é possível criar dashboards interativos para explorar dados em tempo real, focando na análise visual e na criação de relatórios complexos, ao invés de fornecer análises sobre dados genéticos.
 
-SOPHiA GENETICS: SOPHiA GENETICS é uma plataforma de inteligência artificial focada em dados genéticos. Ela oferece soluções para análise de dados genômicos, permitindo diagnósticos médicos mais rápidos e precisos, especialmente em doenças raras e câncer. Ao contrário das ferramentas de visualização de dados, SOPHiA utiliza IA para processar e interpretar dados genéticos complexos, ajudando na personalização de tratamentos médicos.
+- SOPHiA GENETICS: SOPHiA GENETICS é uma plataforma de inteligência artificial focada em dados genéticos. Ela oferece soluções para análise de dados genômicos, permitindo diagnósticos médicos mais rápidos e precisos, especialmente em doenças raras e câncer. Ao contrário das ferramentas de visualização de dados, SOPHiA utiliza IA para processar e interpretar dados genéticos complexos, ajudando na personalização de tratamentos médicos.
 
-Varsome: Similar ao SOPHiA GENETICS, Varsome é uma plataforma que analisa dados genéticos, mas com foco na interpretação de variantes genéticas associadas a doenças raras. A principal diferença é que Varsome é voltada para uma abordagem mais específica de interpretação e visualização das informações genéticas, enquanto SOPHiA GENETICS possui uma integração mais ampla com IA para personalização de tratamentos médicos.
+- Varsome: Similar ao SOPHiA GENETICS, Varsome é uma plataforma que analisa dados genéticos, mas com foco na interpretação de variantes genéticas associadas a doenças raras. A principal diferença é que Varsome é voltada para uma abordagem mais específica de interpretação e visualização das informações genéticas, enquanto SOPHiA GENETICS possui uma integração mais ampla com IA para personalização de tratamentos médicos.
 
-Franklin: Franklin é uma ferramenta que usa IA para interpretar dados de sequenciamento genético e ajudar no diagnóstico de doenças raras. A principal diferença de Franklin em relação a outras plataformas é seu foco em combinar IA com sequenciamento genético para sugerir tratamentos personalizados. Sua principal aplicação está em melhorar os resultados médicos, enquanto outras ferramentas podem ser mais genéricas na interpretação dos dados.
+- Franklin: Franklin é uma ferramenta que usa IA para interpretar dados de sequenciamento genético e ajudar no diagnóstico de doenças raras. A principal diferença de Franklin em relação a outras plataformas é seu foco em combinar IA com sequenciamento genético para sugerir tratamentos personalizados. Sua principal aplicação está em melhorar os resultados médicos, enquanto outras ferramentas podem ser mais genéricas na interpretação dos dados.
 
-VarStation: VarStation se destaca no campo da bioinformática, ajudando na análise de variantes genéticas, com foco na personalização de tratamentos. A principal diferença é seu enfoque em fornecer suporte a médicos e geneticistas, oferecendo uma interface mais orientada à clínica. Isso contrasta com outras ferramentas de bioinformática que podem ser mais técnicas e complexas para uso em pesquisa acadêmica.
+- VarStation: VarStation se destaca no campo da bioinformática, ajudando na análise de variantes genéticas, com foco na personalização de tratamentos. A principal diferença é seu enfoque em fornecer suporte a médicos e geneticistas, oferecendo uma interface mais orientada à clínica. Isso contrasta com outras ferramentas de bioinformática que podem ser mais técnicas e complexas para uso em pesquisa acadêmica.
 
-Illumina: Illumina é uma empresa líder no mercado de sequenciamento genético, oferecendo as tecnologias e plataformas para realizar os próprios sequenciamentos de DNA. Sua diferença é que ela não apenas interpreta dados genéticos, mas também fornece as tecnologias de sequenciamento que alimentam outras plataformas, como o GATK e o Galaxy. Ela tem um papel mais fundamental na geração de dados do que na análise de dados.
+- Illumina: Illumina é uma empresa líder no mercado de sequenciamento genético, oferecendo as tecnologias e plataformas para realizar os próprios sequenciamentos de DNA. Sua diferença é que ela não apenas interpreta dados genéticos, mas também fornece as tecnologias de sequenciamento que alimentam outras plataformas, como o GATK e o Galaxy. Ela tem um papel mais fundamental na geração de dados do que na análise de dados.
 
-GeneYX: GeneYX é uma plataforma baseada em IA focada em interpretar variantes genéticas para diagnóstico e tratamento de doenças. Ao contrário de plataformas como Illumina, que se concentram na geração de dados genéticos, GeneYX se especializa na interpretação clínica desses dados, utilizando IA para conectar variantes a doenças e condições específicas.
+- GeneYX: GeneYX é uma plataforma baseada em IA focada em interpretar variantes genéticas para diagnóstico e tratamento de doenças. Ao contrário de plataformas como Illumina, que se concentram na geração de dados genéticos, GeneYX se especializa na interpretação clínica desses dados, utilizando IA para conectar variantes a doenças e condições específicas.
 
-Galaxy: Galaxy é uma plataforma de bioinformática de código aberto, voltada para a análise de grandes volumes de dados biológicos. Sua principal diferenciação é a flexibilidade que oferece aos pesquisadores, permitindo a criação de fluxos de trabalho personalizados para análise de dados genômicos. Isso a torna ideal para cientistas que necessitam de uma abordagem mais prática e customizável em suas pesquisas.
+- Galaxy: Galaxy é uma plataforma de bioinformática de código aberto, voltada para a análise de grandes volumes de dados biológicos. Sua principal diferenciação é a flexibilidade que oferece aos pesquisadores, permitindo a criação de fluxos de trabalho personalizados para análise de dados genômicos. Isso a torna ideal para cientistas que necessitam de uma abordagem mais prática e customizável em suas pesquisas.
 
-GATK: GATK (Genome Analysis Toolkit) é uma ferramenta especializada em análise de dados de sequenciamento de DNA, focando na identificação de variantes genéticas. A principal diferença do GATK é seu foco na qualidade e precisão da análise de variantes, sendo altamente utilizado para dados genômicos em grande escala, enquanto outras plataformas podem ter um escopo mais amplo e não tão focado em análise de variantes específicas.
+- GATK: GATK (Genome Analysis Toolkit) é uma ferramenta especializada em análise de dados de sequenciamento de DNA, focando na identificação de variantes genéticas. A principal diferença do GATK é seu foco na qualidade e precisão da análise de variantes, sendo altamente utilizado para dados genômicos em grande escala, enquanto outras plataformas podem ter um escopo mais amplo e não tão focado em análise de variantes específicas.
 
-Samtools: Samtools é uma ferramenta de bioinformática usada para manipular e analisar dados de sequenciamento de DNA em formatos específicos, como BAM e SAM. Sua principal diferença é que ela é focada na manipulação de dados em vez de análise interpretativa. Ele permite filtrar e visualizar dados de sequenciamento, mas não realiza análises avançadas ou predições clínicas como outras plataformas.
+- Samtools: Samtools é uma ferramenta de bioinformática usada para manipular e analisar dados de sequenciamento de DNA em formatos específicos, como BAM e SAM. Sua principal diferença é que ela é focada na manipulação de dados em vez de análise interpretativa. Ele permite filtrar e visualizar dados de sequenciamento, mas não realiza análises avançadas ou predições clínicas como outras plataformas.
 
 **Comandos:**
+
 O pipeline processa dados de sequenciamento para encontrar mutações genéticas e analisar sua relevância clínica. Esse fluxo é usado para identificar variantes somáticas em câncer e associá-las a possíveis impactos funcionais.
 
-1. Download de arquivos
+O sinal `!` representa um comando para rodar no Google Colab.
+
+**1. Download de arquivos**
+```bash
 !wget -c https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr9.fa.gz
+```
 Baixa o arquivo chr9.fa.gz, que contém a sequência do cromossomo 9 da referência do genoma hg19. O -c permite continuar um download interrompido.
 
-2. Visualização do conteúdo
+**2. Visualização do conteúdo**
+```bash
 !zcat chr9.fa.gz | head
+```
 •	zcat chr9.fa.gz: Descompacta e exibe o conteúdo do arquivo comprimido chr9.fa.gz sem salvar.
 •	head: Mostra as primeiras 10 linhas do arquivo.
 
-3. Processamento da sequência
+**3. Processamento da sequência**
+```bash
 !zcat chr9.fa.gz | sed -e "s/chr//g" > chr9.fa
+```
+
 •	zcat chr9.fa.gz: Descompacta o arquivo.
 •	sed -e "s/chr//g": Remove todas as ocorrências da palavra "chr" do arquivo.
 •	> chr9.fa: Salva a saída no arquivo chr9.fa.
 
-4. Conferir as primeiras linhas do arquivo
+**4. Conferir as primeiras linhas do arquivo**
+```bash
 !head chr9.fa
-•	Exibe as primeiras 10 linhas do arquivo chr9.fa para confirmar que a modificação foi aplicada corretamente.
+```
 
-5. Instalação do Samtools
+•	`head` exibe as primeiras 10 linhas do arquivo chr9.fa para confirmar que a modificação foi aplicada corretamente.
+
+**5. Instalação do Samtools**
+```bash
 !sudo apt-get install samtools
+```
 •	Instala o Samtools, um conjunto de ferramentas para manipulação de arquivos de sequenciamento de DNA.
 
-6. Indexação do genoma
+**6. Indexação do genoma**
+```bash
 !samtools faidx chr9.fa
+```
+
 •	Cria um índice para o arquivo chr9.fa, permitindo buscas rápidas na sequência.
 
-7. Extração e configuração do GATK
+**7. Extração e configuração do GATK**
+```bash
 !unzip gatk-4.2.2.0.zip
+```
+
 •	Descompacta o GATK 4.2.2.0, uma ferramenta usada para chamar variantes genéticas.
 !./gatk-4.2.2.0/gatk
 •	Executa o GATK para verificar se está funcionando corretamente.
 
-8. Criar um dicionário para o genoma
+**8. Criar um dicionário para o genoma**
+```bash
 !./gatk-4.2.2.0/gatk CreateSequenceDictionary -R chr9.fa -O chr9.dict
+```
+
 •	Cria um dicionário do genoma chr9.fa, necessário para várias ferramentas do GATK.
 
-9. Criar intervalos de referência
+**9. Criar intervalos de referência**
+```bash
 !./gatk-4.2.2.0/gatk ScatterIntervalsByNs -R chr9.fa -O chr9.interval_list -OT ACGT
+```
+
 •	Gera uma lista de intervalos de regiões do genoma para processamento paralelo.
 
-10. Identificação de variantes somáticas (câncer)
+**10. Identificação de variantes somáticas (câncer)**
+```bash
 !./gatk-4.2.2.0/gatk Mutect2 \
   -R chr9.fa \
   -I somatico/tumor_JAK2.bam \
@@ -118,6 +156,8 @@ Baixa o arquivo chr9.fa.gz, que contém a sequência do cromossomo 9 da referên
   --germline-resource somatico/af-only-gnomad-chr9.vcf.gz \
   -O somatic.vcf.gz \
   -L chr9.interval_list
+```
+
 •	Mutect2 é uma ferramenta do GATK usada para detectar variantes somáticas (câncer).
 •	-R chr9.fa: Usa chr9.fa como referência.
 •	-I tumor_JAK2.bam e -I normal_JAK2.bam: Amostras de DNA do tumor e do tecido normal.
@@ -125,21 +165,27 @@ Baixa o arquivo chr9.fa.gz, que contém a sequência do cromossomo 9 da referên
 •	-O somatic.vcf.gz: Salva o resultado em somatic.vcf.gz.
 •	-L chr9.interval_list: Define intervalos do cromossomo 9.
 
-11. Coleta de estatísticas de variantes
+**11. Coleta de estatísticas de variantes**
+```bash
 !./gatk-4.2.2.0/gatk GetPileupSummaries \
   -I somatico/tumor_JAK2.bam \
   -V somatico/af-only-gnomad-chr9.vcf.gz \
   -L chr9.interval_list \
   -O tumor_JAK2.table
+```
 •	Coleta estatísticas de cobertura da amostra tumoral.
+
+```bash
 !./gatk-4.2.2.0/gatk GetPileupSummaries \
   -I somatico/normal_JAK2.bam \
   -V somatico/af-only-gnomad-chr9.vcf.gz \
   -L chr9.interval_list \
   -O normal_JAK2.table
+```
 •	Coleta estatísticas da amostra normal.
 
-12. Anotação funcional das variantes com Ensembl VEP
+**12. Anotação funcional das variantes com Ensembl VEP**
+```bash
 !./ensembl-vep/vep  \
   -i filtered.vcf.gz  \
   -o filtered.vep.tsv \
@@ -148,31 +194,47 @@ Baixa o arquivo chr9.fa.gz, que contém a sequência do cromossomo 9 da referên
   --fields "Location,SYMBOL,Consequence,Feature,Amino_acids,CLIN_SIG" \
   --fasta chr9.fa \
   --individual all
+```
+
 •	Usa o Ensembl Variant Effect Predictor (VEP) para anotar as variantes detectadas.
 •	-i filtered.vcf.gz: Arquivo de variantes filtradas.
 •	-o filtered.vep.tsv: Salva a saída no formato TSV.
 •	--fields: Campos de interesse (posição, gene, consequência funcional, impacto clínico, etc.).
 •	--fasta chr9.fa: Usa chr9.fa como referência.
 
-13. Exibir as variantes anotadas
+**13. Exibir as variantes anotadas**
+```bash
 !cat filtered.vep.tsv
+```
+
 •	Exibe o conteúdo do arquivo com as variantes anotadas.
 
-14. Instala o uDocker e realiza sua configuração inicial.
-pip install udocker: Instala o uDocker usando o gerenciador de pacotes do Python.
-udocker --allow-root install: Inicializa o uDocker, permitindo execução como root e baixando seus componentes necessários.
+**14. Instala o uDocker e realiza sua configuração inicial.**
+```bash
+%%bash
+pip install udocker # Instala o uDocker usando o gerenciador de pacotes do Python.
+udocker --allow-root install # Inicializa o uDocker, permitindo execução como root e baixando seus componentes necessários.
+```
 
-15.Baixa a imagem do Ensembl VEP para execução em contêiner.
-udocker --allow-root pull: Baixa uma imagem do Docker Hub, permitindo execução como root.
+**15.Baixa a imagem do Ensembl VEP para execução em contêiner.**
+
+`udocker --allow-root pull` Baixa uma imagem do Docker Hub, permitindo execução como root.
 ensemblorg/ensembl-vep: Nome da imagem oficial do Ensembl VEP, usada para anotação funcional de variantes genéticas.
 
-16. Exibe o diretório atual onde o comando está sendo executado.
+**16. Exibe o diretório atual onde o comando está sendo executado.**
+```bash
+!pwd
+```
+
 pwd (print working directory) mostra o caminho absoluto do diretório no sistema de arquivos.
 O ! indica que o comando está sendo executado no shell do sistema dentro de um ambiente como Jupyter Notebook.
 Exemplo de saída:
-/home/usuario/projeto
 
-17. Execução do Ensembl VEP dentro de um contêiner uDocker
+```
+/home/usuario/projeto
+```
+
+**17. Execução do Ensembl VEP dentro de um contêiner uDocker**
 udocker --allow-root run → Executa um contêiner uDocker com permissões de root.
 --rm → Remove o contêiner após a execução (descarta qualquer alteração feita dentro dele).
 **-v \pwd`:`pwd`** → Monta o diretório atual (pwd`) dentro do contêiner, permitindo acesso aos arquivos do host.
@@ -181,14 +243,17 @@ ensemblorg/ensembl-vep → Usa a imagem oficial do Ensembl VEP.
 vep → Comando executado dentro do contêiner (inicia o Variant Effect Predictor).
 O comando executa o Ensembl VEP dentro de um contêiner uDocker, garantindo que o programa tenha acesso aos arquivos do diretório atual. Isso permite rodar o VEP sem instalar diretamente no sistema operacional.
 
-18. Criação e configuração do diretório para saída do VEP
+**18. Criação e configuração do diretório para saída do VEP**
 %%bash → Indica que o bloco de código será executado no shell Bash (usado em notebooks como Jupyter).
 mkdir -p vep_output → Cria o diretório vep_output, se ele ainda não existir.
 chmod 777 vep_output → Concede permissões totais de leitura, escrita e execução para todos os usuários no diretório. Isso garante que o contêiner possa gravar arquivos dentro dele.
 ls -l → Lista os arquivos e diretórios com detalhes (permissões, dono, grupo, tamanho e data de modificação).
 O comando cria um diretório para armazenar a saída do VEP, garantindo que ele tenha as permissões corretas para escrita pelo contêiner uDocker.
 
-19. O código usa a API do Ensembl VEP (Variant Effect Predictor) para obter anotações de variantes genéticas na região 9:22125503-22125502 do genoma humano (GRCh37). Ele processa os dados e os exibe em formato de tabela com pandas.
+**19. O código usa a API do Ensembl VEP (Variant Effect Predictor)**
+
+Anotações de variantes genéticas na região 9:22125503-22125502 do genoma humano (GRCh37). Ele processa os dados e os exibe em formato de tabela com pandas.
+
 requests: Para fazer a requisição HTTP à API do Ensembl.
 pandas: Para manipular os dados e exibi-los como tabela.
 server: URL base do Ensembl para a versão do genoma GRCh37.
@@ -205,12 +270,14 @@ Obtém informações sobre a variante genética em chr9:22125503-22125502.
 Converte a resposta JSON para um DataFrame pandas.
 Exibe a tabela com os dados estruturados.
 
-20.Comando para visualizar o conteúdo do arquivo filtered.vep.tsv
+**20.Comando para visualizar o conteúdo do arquivo filtered.vep.tsv**
+
 cat → Exibe o conteúdo de um arquivo no terminal.
 filtered.vep.tsv → Nome do arquivo gerado pelo Ensembl VEP, contendo as anotações das variantes genéticas.
 O comando verificar rapidamente o conteúdo do arquivo gerado pelo VEP, confirmar se a anotação das variantes foi concluída corretamente e inspecionar a estrutura do arquivo antes de processá-lo em outro programa.
 
-21. Comando para Converter TSV para CSV
+**21. Comando para Converter TSV para CSV**
+
 cat tabela-variantes-teste01.tsv:
 Exibe o conteúdo do arquivo tabela-variantes-teste01.tsv no terminal.
 O arquivo tabela-variantes-teste01.tsv é um arquivo TSV (Tab Separated Values), onde os valores são separados por tabulação (\t).
