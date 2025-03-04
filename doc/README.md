@@ -14,8 +14,8 @@ Next-Generation Sequencing (NGS) é uma tecnologia revolucionária que permite o
 
 A tecnologia NGS utiliza plataformas automatizadas que sequenciam milhões de fragmentos de DNA simultaneamente. Essa abordagem paralela permite obter grandes quantidades de dados em um curto período. Existem dois métodos principais:
 
-**- Single-Read Sequencing:** Sequencia apenas uma extremidade de cada fragmento de DNA. É mais rápido e utilizado para estudos como RNA-Seq.
-**- Paired-End Sequencing:** Sequencia ambas as extremidades de cada fragmento, proporcionando maior precisão para análise de variantes estruturais e montagens de genomas complexos.
+- **Single-Read Sequencing:** Sequencia apenas uma extremidade de cada fragmento de DNA. É mais rápido e utilizado para estudos como RNA-Seq.
+- **Paired-End Sequencing:** Sequencia ambas as extremidades de cada fragmento, proporcionando maior precisão para análise de variantes estruturais e montagens de genomas complexos.
 
 A preparação da biblioteca é uma etapa crítica, envolvendo a fragmentação do DNA, a ligação de adaptadores e a amplificação por PCR. A escolha dos kits de preparo depende do objetivo do experimento e das plataformas utilizadas.
 
