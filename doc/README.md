@@ -21,59 +21,59 @@ A preparação da biblioteca é uma etapa crítica, envolvendo a fragmentação 
 
 **Aplicações do NGS**
 
-- Targeted Resequencing: Permite investigar genes específicos associados a doenças ou traços. Usado em medicina personalizada para identificar mutações genéticas.
-- Deep Sequencing: Gera dados de alta profundidade, permitindo a detecção de variantes raras e a análise de populações microbianas complexas.
-- Mate Pair Sequencing: Ideal para identificar grandes reordenamentos genômicos e mapear regiões repetitivas.
-- Sample Multiplexing: Usa índices para sequenciar várias amostras em uma única corrida, reduzindo custos e aumentando a eficiência.
+- **Targeted Resequencing:** Permite investigar genes específicos associados a doenças ou traços. Usado em medicina personalizada para identificar mutações genéticas.
+- **Deep Sequencing:** Gera dados de alta profundidade, permitindo a detecção de variantes raras e a análise de populações microbianas complexas.
+- **Mate Pair Sequencing:** Ideal para identificar grandes reordenamentos genômicos e mapear regiões repetitivas.
+- **Sample Multiplexing:** Usa índices para sequenciar várias amostras em uma única corrida, reduzindo custos e aumentando a eficiência.
 
 **Bases Moleculares do Sequenciamento**
 
 O sequenciamento baseia-se na detecção de nucleotídeos incorporados durante a síntese de DNA. As principais plataformas (Illumina, Ion Torrent) diferem nos métodos de detecção:
 
-- Illumina: Utiliza a síntese reversível de terminadores fluorescentes, gerando alta precisão e rendimento.
-- Ion Torrent: Detecta mudanças no pH geradas pela incorporação de nucleotídeos, sendo uma alternativa mais acessível.
+- **Illumina:** Utiliza a síntese reversível de terminadores fluorescentes, gerando alta precisão e rendimento.
+- **Ion Torrent:** Detecta mudanças no pH geradas pela incorporação de nucleotídeos, sendo uma alternativa mais acessível.
 A cobertura de sequenciamento é essencial para garantir a qualidade dos dados. Uma maior cobertura aumenta a confiança na detecção de variantes, especialmente em regiões de baixa expressão.
 
 **Design**
 
-- Seleção de Alvos: Escolha de genes ou regiões a serem sequenciados.
+- **Seleção de Alvos:** Escolha de genes ou regiões a serem sequenciados.
 
 **Preparação de Biblioteca**
 
-- Multiplexação e Índices: Planejamento para combinar amostras sem perda de integridade.
+- **Multiplexação e Índices:** Planejamento para combinar amostras sem perda de integridade.
 
 **Ferramentas e Plataformas NGS**
 
-- Illumina: Sequencing Platforms: Sistemas como NovaSeq, NextSeq e MiSeq atendem diferentes demandas, desde estudos de expressão gênica até análise de genomas completos.
-- Experiment Planning Tools: Ferramentas que auxiliam no planejamento e escolha dos kits de biblioteca mais adequados.
-- NGS Library Preparation: Oferece kits de alta eficiência para uma ampla variedade de aplicações.
-- Ion Torrent:
-- Construct Library: Kits otimizados para fragmentação e amplificação do DNA.
-- NGS Instruments: Sistemas como Ion GeneStudio S5 são projetados para estudos direcionados e sequenciamento de baixo custo.
+- **Illumina: Sequencing Platforms:** Sistemas como NovaSeq, NextSeq e MiSeq atendem diferentes demandas, desde estudos de expressão gênica até análise de genomas completos.
+- **Experiment Planning Tools:** Ferramentas que auxiliam no planejamento e escolha dos kits de biblioteca mais adequados.
+- **NGS Library Preparation:** Oferece kits de alta eficiência para uma ampla variedade de aplicações.
+- **Ion Torrent:**
+- **Construct Library:** Kits otimizados para fragmentação e amplificação do DNA.
+- **NGS Instruments:** Sistemas como Ion GeneStudio S5 são projetados para estudos direcionados e sequenciamento de baixo custo.
 
 **Ferramentas uteis:**
 
-- Gitpod (http://gitpod.io) é uma plataforma de desenvolvimento integrada baseada na nuvem. Ela permite que desenvolvedores escrevam, testem e depurem código diretamente no navegador, sem a necessidade de configurar um ambiente local. Diferente de outras ferramentas, seu foco é a agilidade e a colaboração, permitindo que qualquer desenvolvedor inicie um projeto com um ambiente de desenvolvimento pré-configurado e sem a preocupação com configurações locais.
+- **Gitpod (http://gitpod.io):** é uma plataforma de desenvolvimento integrada baseada na nuvem. Ela permite que desenvolvedores escrevam, testem e depurem código diretamente no navegador, sem a necessidade de configurar um ambiente local. Diferente de outras ferramentas, seu foco é a agilidade e a colaboração, permitindo que qualquer desenvolvedor inicie um projeto com um ambiente de desenvolvimento pré-configurado e sem a preocupação com configurações locais.
 
-- Superset: Superset é uma ferramenta de visualização e exploração de dados. Ao contrário das plataformas genéticas, seu principal foco é fornecer insights sobre grandes volumes de dados de diferentes fontes. Com ele, é possível criar dashboards interativos para explorar dados em tempo real, focando na análise visual e na criação de relatórios complexos, ao invés de fornecer análises sobre dados genéticos.
+- **Superset:** Superset é uma ferramenta de visualização e exploração de dados. Ao contrário das plataformas genéticas, seu principal foco é fornecer insights sobre grandes volumes de dados de diferentes fontes. Com ele, é possível criar dashboards interativos para explorar dados em tempo real, focando na análise visual e na criação de relatórios complexos, ao invés de fornecer análises sobre dados genéticos.
 
-- SOPHiA GENETICS: SOPHiA GENETICS é uma plataforma de inteligência artificial focada em dados genéticos. Ela oferece soluções para análise de dados genômicos, permitindo diagnósticos médicos mais rápidos e precisos, especialmente em doenças raras e câncer. Ao contrário das ferramentas de visualização de dados, SOPHiA utiliza IA para processar e interpretar dados genéticos complexos, ajudando na personalização de tratamentos médicos.
+- **SOPHiA GENETICS:** SOPHiA GENETICS é uma plataforma de inteligência artificial focada em dados genéticos. Ela oferece soluções para análise de dados genômicos, permitindo diagnósticos médicos mais rápidos e precisos, especialmente em doenças raras e câncer. Ao contrário das ferramentas de visualização de dados, SOPHiA utiliza IA para processar e interpretar dados genéticos complexos, ajudando na personalização de tratamentos médicos.
 
-- Varsome: Similar ao SOPHiA GENETICS, Varsome é uma plataforma que analisa dados genéticos, mas com foco na interpretação de variantes genéticas associadas a doenças raras. A principal diferença é que Varsome é voltada para uma abordagem mais específica de interpretação e visualização das informações genéticas, enquanto SOPHiA GENETICS possui uma integração mais ampla com IA para personalização de tratamentos médicos.
+- **Varsome:** Similar ao SOPHiA GENETICS, Varsome é uma plataforma que analisa dados genéticos, mas com foco na interpretação de variantes genéticas associadas a doenças raras. A principal diferença é que Varsome é voltada para uma abordagem mais específica de interpretação e visualização das informações genéticas, enquanto SOPHiA GENETICS possui uma integração mais ampla com IA para personalização de tratamentos médicos.
 
-- Franklin: Franklin é uma ferramenta que usa IA para interpretar dados de sequenciamento genético e ajudar no diagnóstico de doenças raras. A principal diferença de Franklin em relação a outras plataformas é seu foco em combinar IA com sequenciamento genético para sugerir tratamentos personalizados. Sua principal aplicação está em melhorar os resultados médicos, enquanto outras ferramentas podem ser mais genéricas na interpretação dos dados.
+- **Franklin:** Franklin é uma ferramenta que usa IA para interpretar dados de sequenciamento genético e ajudar no diagnóstico de doenças raras. A principal diferença de Franklin em relação a outras plataformas é seu foco em combinar IA com sequenciamento genético para sugerir tratamentos personalizados. Sua principal aplicação está em melhorar os resultados médicos, enquanto outras ferramentas podem ser mais genéricas na interpretação dos dados.
 
-- VarStation: VarStation se destaca no campo da bioinformática, ajudando na análise de variantes genéticas, com foco na personalização de tratamentos. A principal diferença é seu enfoque em fornecer suporte a médicos e geneticistas, oferecendo uma interface mais orientada à clínica. Isso contrasta com outras ferramentas de bioinformática que podem ser mais técnicas e complexas para uso em pesquisa acadêmica.
+- **VarStation:** VarStation se destaca no campo da bioinformática, ajudando na análise de variantes genéticas, com foco na personalização de tratamentos. A principal diferença é seu enfoque em fornecer suporte a médicos e geneticistas, oferecendo uma interface mais orientada à clínica. Isso contrasta com outras ferramentas de bioinformática que podem ser mais técnicas e complexas para uso em pesquisa acadêmica.
 
-- Illumina: Illumina é uma empresa líder no mercado de sequenciamento genético, oferecendo as tecnologias e plataformas para realizar os próprios sequenciamentos de DNA. Sua diferença é que ela não apenas interpreta dados genéticos, mas também fornece as tecnologias de sequenciamento que alimentam outras plataformas, como o GATK e o Galaxy. Ela tem um papel mais fundamental na geração de dados do que na análise de dados.
+- **Illumina:** Illumina é uma empresa líder no mercado de sequenciamento genético, oferecendo as tecnologias e plataformas para realizar os próprios sequenciamentos de DNA. Sua diferença é que ela não apenas interpreta dados genéticos, mas também fornece as tecnologias de sequenciamento que alimentam outras plataformas, como o GATK e o Galaxy. Ela tem um papel mais fundamental na geração de dados do que na análise de dados.
 
-- GeneYX: GeneYX é uma plataforma baseada em IA focada em interpretar variantes genéticas para diagnóstico e tratamento de doenças. Ao contrário de plataformas como Illumina, que se concentram na geração de dados genéticos, GeneYX se especializa na interpretação clínica desses dados, utilizando IA para conectar variantes a doenças e condições específicas.
+- **GeneYX:** GeneYX é uma plataforma baseada em IA focada em interpretar variantes genéticas para diagnóstico e tratamento de doenças. Ao contrário de plataformas como Illumina, que se concentram na geração de dados genéticos, GeneYX se especializa na interpretação clínica desses dados, utilizando IA para conectar variantes a doenças e condições específicas.
 
-- Galaxy: Galaxy é uma plataforma de bioinformática de código aberto, voltada para a análise de grandes volumes de dados biológicos. Sua principal diferenciação é a flexibilidade que oferece aos pesquisadores, permitindo a criação de fluxos de trabalho personalizados para análise de dados genômicos. Isso a torna ideal para cientistas que necessitam de uma abordagem mais prática e customizável em suas pesquisas.
+- **Galaxy:** Galaxy é uma plataforma de bioinformática de código aberto, voltada para a análise de grandes volumes de dados biológicos. Sua principal diferenciação é a flexibilidade que oferece aos pesquisadores, permitindo a criação de fluxos de trabalho personalizados para análise de dados genômicos. Isso a torna ideal para cientistas que necessitam de uma abordagem mais prática e customizável em suas pesquisas.
 
-- GATK: GATK (Genome Analysis Toolkit) é uma ferramenta especializada em análise de dados de sequenciamento de DNA, focando na identificação de variantes genéticas. A principal diferença do GATK é seu foco na qualidade e precisão da análise de variantes, sendo altamente utilizado para dados genômicos em grande escala, enquanto outras plataformas podem ter um escopo mais amplo e não tão focado em análise de variantes específicas.
+- **GATK: GATK (Genome Analysis Toolkit)** é uma ferramenta especializada em análise de dados de sequenciamento de DNA, focando na identificação de variantes genéticas. A principal diferença do GATK é seu foco na qualidade e precisão da análise de variantes, sendo altamente utilizado para dados genômicos em grande escala, enquanto outras plataformas podem ter um escopo mais amplo e não tão focado em análise de variantes específicas.
 
-- Samtools: Samtools é uma ferramenta de bioinformática usada para manipular e analisar dados de sequenciamento de DNA em formatos específicos, como BAM e SAM. Sua principal diferença é que ela é focada na manipulação de dados em vez de análise interpretativa. Ele permite filtrar e visualizar dados de sequenciamento, mas não realiza análises avançadas ou predições clínicas como outras plataformas.
+- **Samtools:** Samtools é uma ferramenta de bioinformática usada para manipular e analisar dados de sequenciamento de DNA em formatos específicos, como BAM e SAM. Sua principal diferença é que ela é focada na manipulação de dados em vez de análise interpretativa. Ele permite filtrar e visualizar dados de sequenciamento, mas não realiza análises avançadas ou predições clínicas como outras plataformas.
 
 **Comandos:**
 
