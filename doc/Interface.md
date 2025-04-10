@@ -10,7 +10,7 @@ Todos os filtros são implementados com campos de input e dropdowns reativos, qu
 
 - **Tipo:** Dropdown (select)
 - **Função:** Filtra os resultados pela coluna Chr (cromossomo).
-- **Opções disponíveis:** `chr1`, `chr2`, ..., `chr22`, `chrX`, `chrY`, etc.
+- **Opções disponíveis:** `chr1`, `chr2`,`chr22`, `chrX`, `chrY`, etc.
 - **Dados utilizados:** Campo `Chr` do dataset.
 
 ---
@@ -91,7 +91,7 @@ Todos os filtros são implementados com campos de input e dropdowns reativos, qu
 
 ---
 
-## 📋 Tabela de Resultados (Variants)
+## Tabela de Resultados (Variants)
 
 - **Tipo:** Tabela dinâmica com scroll horizontal.
 - **Fonte de dados:** Lista de variantes genéticas processadas (ex: arquivo VCF convertido).
@@ -100,7 +100,7 @@ Todos os filtros são implementados com campos de input e dropdowns reativos, qu
   - `FILTER`, `HGVSc`, `HGVSp`, `SIFT`, `PolyPhen`
   - `MAX_AF`, `Gnomad eAF`
 
-### 🎨 Recursos visuais:
+### Recursos visuais:
 
 - Classificação Clinvar com cor de fundo (ex: verde para "benign").
 - Ordenação por colunas.
