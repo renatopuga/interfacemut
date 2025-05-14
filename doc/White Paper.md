@@ -27,7 +27,7 @@ O Looker Studio foi utilizado como plataforma de visualização dos dados. A int
 
 •	Visualização de atributos como SIFT, PolyPhen, AF populacionais, cobertura média, etc.
 
-A interface permite que usuários não especializados em bioinformática consigam explorar os dados com facilidade e segurança.
+A interface permite que usuários consigam explorar os dados com facilidade e segurança.
 Resultados e Impacto
 A ferramenta permite a exploração eficiente de grandes volumes de dados genômicos com foco na interpretação clínica. Os principais benefícios observados foram:
 
