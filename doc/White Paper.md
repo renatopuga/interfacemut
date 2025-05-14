@@ -1,6 +1,7 @@
 Uma Abordagem Open-Source para Análise de Variantes com Visualização Interativa no Google Looker Studio
 A análise de variantes genômicas, especialmente as somáticas, requer pipelines computacionais robustos e estratégias eficazes de visualização para tornar a interpretação dos dados mais acessível e confiável. Este trabalho apresenta uma abordagem open-source baseada em serviços de nuvem, que integra bioinformática e visualização de dados por meio do Google Looker Studio. O objetivo é oferecer uma solução escalável, interativa e de fácil uso para pesquisadores e profissionais da área clínica.
-Introdução
+
+Introdução:
 
 A bioinformática moderna enfrenta o desafio de processar grandes volumes de dados genômicos com precisão, ao mesmo tempo em que apresenta os resultados de forma compreensível para profissionais de diferentes áreas. A visualização interativa, nesse contexto, é fundamental para facilitar a análise e a tomada de decisões clínicas. Este white paper descreve o desenvolvimento de um pipeline open-source que une ferramentas amplamente utilizadas na análise genômica com a flexibilidade e acessibilidade do Google Looker Studio.
 Metodologia
