@@ -4,6 +4,7 @@ A análise de variantes genômicas, especialmente as somáticas, requer pipeline
 Introdução:
 
 A bioinformática moderna enfrenta o desafio de processar grandes volumes de dados genômicos com precisão, ao mesmo tempo em que apresenta os resultados de forma compreensível para profissionais de diferentes áreas. A visualização interativa, nesse contexto, é fundamental para facilitar a análise e a tomada de decisões clínicas. Este white paper descreve o desenvolvimento de um pipeline open-source que une ferramentas amplamente utilizadas na análise genômica com a flexibilidade e acessibilidade do Google Looker Studio.
+
 Metodologia
 
 O pipeline proposto foi desenvolvido e executado na plataforma Gitpod.io, com foco em variantes somáticas. As ferramentas utilizadas incluem:
@@ -38,9 +39,12 @@ A ferramenta permite a exploração eficiente de grandes volumes de dados genôm
 
 •	Acesso rápido a insights clínicos, com destaque para variantes patogênicas e de significado incerto (VUS).
 
-Conclusão
+Conclusão:
+
 Ao integrar ferramentas consolidadas de bioinformática com uma plataforma de business intelligence como o Google Looker Studio, este projeto propõe uma nova forma de lidar com a complexidade dos dados genômicos. A interface interativa e a automatização do pipeline tornam a análise mais ágil, segura e compreensível, democratizando o acesso à informação e contribuindo para avanços na medicina personalizada.
-Tecnologias Utilizadas
+Tecnologias 
+
+Utilizadas:
 
 •	Gitpod.io (ambiente de desenvolvimento)
 
