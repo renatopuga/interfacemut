@@ -41,7 +41,7 @@ A ferramenta permite a exploração eficiente de grandes volumes de dados genôm
 
 Conclusão:
 
-Ao integrar ferramentas consolidadas de bioinformática com uma plataforma de business intelligence como o Google Looker Studio, este projeto propõe uma nova forma de lidar com a complexidade dos dados genômicos. A interface interativa e a automatização do pipeline tornam a análise mais ágil, segura e compreensível, democratizando o acesso à informação e contribuindo para avanços na medicina personalizada.
+Ao integrar ferramentas consolidadas de bioinformática com uma plataforma como o Google Looker Studio, este projeto propõe uma nova forma de lidar com a complexidade dos dados genômicos. A interface interativa e a automatização do pipeline tornam a análise mais ágil, segura e compreensível.
 
 Tecnologias Utilizadas:
 
