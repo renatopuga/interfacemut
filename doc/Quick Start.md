@@ -11,7 +11,7 @@ Caso os dados estejam inicialmente em um arquivo CSV, recomenda-se a utilizaçã
 Com a nova planilha criada, acesse o template do dashboard por meio do seguinte link:
 [https://lookerstudio.google.com/u/0/reporting/24924365-0b5e-4937-88a9-edce7ca5ebab/page/xDwzE/preview]
 
-Em seguida, clique em “Arquivo” > “Fazer uma cópia”. Durante o processo de duplicação, o Looker Studio solicitará a substituição da fonte de dados. Neste momento, selecione a nova planilha do Google Sheets que contém os dados da nova amostra.
+Em seguida, clique em “Usar meus proprios dados”. Durante o processo de duplicação, o Looker Studio solicitará a substituição da fonte de dados. Neste momento, selecione a nova planilha do Google Sheets que contém os dados da nova amostra.
 
 Após a substituição da fonte, o dashboard será automaticamente atualizado com os dados recém-importados. Como o modelo foi construído utilizando exclusivamente filtros interativos, as visualizações se ajustam dinamicamente.
 
