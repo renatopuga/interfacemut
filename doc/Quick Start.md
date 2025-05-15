@@ -2,7 +2,7 @@
 
 ### Requisitos
 - Conta no Gmail
-- Tabela csv (Convertida pela API)[Link]([https://colab.research.google.com/drive/1jG9zyresfT9uuqwr2KQJK3rmzBGN5vlO?usp=sharing)
+- Tabela csv (Convertida pela API) (Acessar Google Colab da API)[https://colab.research.google.com/drive/1jG9zyresfT9uuqwr2KQJK3rmzBGN5vlO?usp=sharing]
 
 Para reutilizar o dashboard modelo desenvolvido no Google Looker Studio com uma nova amostra de dados, siga as etapas. É importante ressaltar que o Looker Studio utiliza planilhas do Google Sheets como principal fonte de dados. Portanto, é necessário que a nova base esteja neste formato.
 
