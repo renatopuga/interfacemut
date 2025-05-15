@@ -33,7 +33,7 @@ A ferramenta permite a exploração eficiente de grandes volumes de dados genôm
 
 •	Redução de erros manuais, graças à automação do fluxo de dados.
 
-•	Visualização clara e interativa, facilitando o uso por equipes multidisciplinares.
+•	Visualização clara e interativa.
 
 •	Escalabilidade e replicabilidade, por se tratar de uma solução baseada em serviços de nuvem e ferramentas open-source.
 
