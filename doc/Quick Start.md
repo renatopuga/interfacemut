@@ -1,7 +1,9 @@
-# Como utilizar o dashboard modelo do Looker Studio com uma nova tabela de dados
+## Como utilizar o dashboard modelo do Looker Studio com uma nova tabela de dados
+
+Para acessar o template acesse o link: [https://lookerstudio.google.com/u/0/reporting/24924365-0b5e-4937-88a9-edce7ca5ebab/page/xDwzE]
 
 ### Requisitos
-- Conta no Gmail
+- Se for entrar com o sua própria tabela é precisa ter uma conta no Gmail
 - Tabela csv (Convertida pela API) (Acessar Google Colab da API)[https://colab.research.google.com/drive/1jG9zyresfT9uuqwr2KQJK3rmzBGN5vlO?usp=sharing]
 
 Para reutilizar o dashboard modelo desenvolvido no Google Looker Studio com uma nova amostra de dados, siga as etapas. É importante ressaltar que o Looker Studio utiliza planilhas do Google Sheets como principal fonte de dados. Portanto, é necessário que a nova base esteja neste formato.
