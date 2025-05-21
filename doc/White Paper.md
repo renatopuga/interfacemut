@@ -3,7 +3,7 @@ A análise de variantes genômicas, especialmente as somáticas, requer pipeline
 
 Introdução:
 
-A bioinformática moderna enfrenta o desafio de processar grandes volumes de dados genômicos com precisão, ao mesmo tempo em que apresenta os resultados de forma compreensível para profissionais de diferentes áreas. A visualização interativa, nesse contexto, é fundamental para facilitar a análise e a tomada de decisões clínicas. Este white paper descreve o desenvolvimento de um pipeline open-source que une ferramentas amplamente utilizadas na análise genômica com a flexibilidade e acessibilidade do Google Looker Studio.
+ A visualização interativa é fundamental para facilitar a análise e a tomada de decisões clínicas. Este white paper descreve o desenvolvimento de um pipeline open-source que une ferramentas amplamente utilizadas na análise genômica com a flexibilidade e acessibilidade do Google Looker Studio.
 
 Metodologia
 
