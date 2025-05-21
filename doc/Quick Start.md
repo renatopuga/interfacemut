@@ -20,3 +20,10 @@ Selecione a nova planilha do Google Sheets que você acabou de gerar.
 O dashboard será automaticamente carregado com os novos dados.
 Como o modelo foi construído com filtros interativos, as visualizações se ajustam dinamicamente à nova base.
 
+### Casos de Uso
+
+1. Como buscar genes de interesse com AF > 0.2?
+
+- No filtro `Gene` digite ou selecione os genes de interesse
+- No filtro AF digite 0.2 e aperte ENTER
+
