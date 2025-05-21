@@ -25,5 +25,5 @@ Como o modelo foi construído com filtros interativos, as visualizações se aju
 1. Como buscar genes de interesse com AF > 0.2?
 
 - No filtro `Gene` digite ou selecione os genes de interesse
-- No filtro AF digite 0.2 e aperte ENTER
+- No filtro VAF digite 0.2 e 0.8 e aperte ENTER
 
