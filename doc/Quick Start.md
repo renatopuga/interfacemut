@@ -22,8 +22,8 @@ Como o modelo foi construído com filtros interativos, as visualizações se aju
 
 ### Casos de Uso
 
-1. Como buscar genes de interesse com AF > 0.2?
+1. Como buscar Genes de interesse, BRCA1 e TP53, com frquência alélica da variante (VAF) > 0.2 e < 0.8?
 
 - No filtro `Gene` digite ou selecione os genes de interesse
-- No filtro VAF digite 0.2 e 0.8 e aperte ENTER
+- No filtro `VAF` digite `0.2` e `0.8` e aperte ENTER
 
