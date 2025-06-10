@@ -21,7 +21,7 @@ In the triennium 2012-2014, the project conducted at the Israelita Albert Einste
 - Tabela no formato .CSV
 - Conta no Gmail
 
-## API CSV para Google Sheets**
+## API CSV para Google Sheets
 
 **Limitações do Google Sheets**
 - Tamanho do arquivo menor do que 300Mb
