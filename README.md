@@ -1,12 +1,7 @@
-# interfacemut
-Interface de Mutações Genéticas
+# InterfaceMut
 
-> by: Emilly Bó e Renato Puga
+Dashboard para visualização de variantes genéticas anotdas pelo ensembl-vep.
 
-### Documentação
-- [Introdução NGS](doc)
 
-### Meu Primeiro Pipeline
-- Google Colab - Pipeline Executável [Google Colab](https://colab.research.google.com/drive/10gCDDhcCo-2SkE8Kp-u8xqDgBlDZS3zL?usp=sharing)
-- Alinhamento com BWA [BWA](doc/bwa.md)
-- Looker Studio - [Filtros](doc/looker-studio-filters.md)
+**Dashboard:** 
+- https://lookerstudio.google.com/reporting/1245291b-b1bd-4ab4-95f9-d4dfde96bc2b/page/xDwzE
