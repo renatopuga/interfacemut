@@ -29,7 +29,7 @@ In the triennium 2012-2014, the project conducted at the Israelita Albert Einste
 
 **Tabela .CSV**
 
-Prepare uma tabela no formato CSV. Para facilitar esse processo, utilize o notebook do Google Colab já preparado para isso: Google Colab da API [https://colab.research.google.com/drive/1jG9zyresfT9uuqwr2KQJK3rmzBGN5vlO?usp=sharing]
+Prepare uma tabela no formato CSV. Para facilitar esse processo, utilize o notebook do Google Colab já preparado para isso: [Google Colab da API](https://colab.research.google.com/drive/1jG9zyresfT9uuqwr2KQJK3rmzBGN5vlO?usp=sharing)
 
 Antes de começar a usar o Looker Studio, ao acessar o site pela primeira vez com sua conta Google, o sistema apresentará algumas telas de configuração inicial (como aceitar os termos de uso, permissões de acesso, preferências de idioma, etc.).
 
