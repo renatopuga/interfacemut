@@ -33,11 +33,12 @@ Prepare uma tabela no formato CSV. Para facilitar esse processo, utilize o noteb
 
 Antes de começar a usar o Looker Studio, ao acessar o site pela primeira vez com sua conta Google, o sistema apresentará algumas telas de configuração inicial (como aceitar os termos de uso, permissões de acesso, preferências de idioma, etc.).
 
-Para reutilizar o InterfaceMut com uma nova amostra de dados, siga as etapas abaixo. Link do template: [https://lookerstudio.google.com/u/0/reporting/24924365-0b5e-4937-88a9-edce7ca5ebab/page/xDwzE]
+- InterfaceMut Beta (Uma amostra): [Modo Visualizar](https://lookerstudio.google.com/u/0/reporting/24924365-0b5e-4937-88a9-edce7ca5ebab/page/xDwzE)
+- InterfaceMut Preview (Sua tabela): [Modo Preview - MyData](https://lookerstudio.google.com/reporting/24924365-0b5e-4937-88a9-edce7ca5ebab/page/xDwzE/preview)
 
 **Passos**
 
-- Acesse o link do InterfaceMut e clique em _"Usar meus próprios dados"._
+- Acesse o link do InterfaceMut Preview e clique em _"Usar meus próprios dados"._
 - Durante o processo de duplicação, o Looker Studio solicitará a substituição da fonte de dados. Selecione a nova planilha do Google Sheets que você acabou de gerar.
 - O InterfaceMut será automaticamente carregado com os novos dados. Como o modelo foi construído com filtros interativos, as visualizações se ajustam dinamicamente à nova base.
 
