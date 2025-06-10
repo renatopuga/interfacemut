@@ -14,9 +14,7 @@
 ### Instituições envolvidas  
 - Hospital Israelita Albert Einstein  
 - Programa de Apoio ao Desenvolvimento Institucional do SUS (PROADI-SUS)
-
-### Período  
-2012–2014
+- Período: 2012–2014
 
 ### Descrição  
 O estudo disponibilizou testes genéticos e moleculares a pacientes do SUS com leucemias mieloides. Foi realizado o sequenciamento de exoma desses pacientes para investigar alterações genéticas relevantes ao prognóstico e à terapêutica.
