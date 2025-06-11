@@ -6,13 +6,11 @@
 
 ---
 
-## 🔬 Projeto de origem – BioProject [PRJNA530251](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA530251)
+## 🔬 Database - BioProject [PRJNA530251](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA530251)
 
 ### Título do projeto  
 **"Avaliação da incidência, relevância clínica e prognóstico de mutações moleculares em pacientes com Leucemia Mieloide Aguda (LMA), Síndromes Mielodisplásicas e Neoplasias Mieloproliferativas"**
 
-### Instituições envolvidas  
-- Hospital Israelita Albert Einstein  
 - Programa de Apoio ao Desenvolvimento Institucional do SUS (PROADI-SUS)
 - Período: 2012–2014
 
